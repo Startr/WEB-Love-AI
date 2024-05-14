@@ -17,6 +17,8 @@ Embark on a transformative journey with WEB-Love-AI, a pioneering initiative und
 
 ### 2. Installation
 
+**Note:** Get [Ollama](https://ollama.com/download) before installing Startr.Cloud WEB-Love-AI
+
 Get started with our project by following these steps from your terminal:
 
 **Clone the repository**
