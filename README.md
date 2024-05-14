@@ -17,10 +17,13 @@ Embark on a transformative journey with WEB-Love-AI, a pioneering initiative und
 
 ### 2. Installation
 
-Get started with our project by following these steps:
+Get started with our project by following these steps from your terminal:
 
 **Clone the repository**
 `git clone https://github.com/Startr/WEB-Love-AI/`
+
+**Switch to the directory**
+`cd WEB-Love-AI`
 
 **Build and run the Docker container**
 `./BuildnRun.sh`
