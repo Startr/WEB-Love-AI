@@ -69,10 +69,12 @@ RUN find . -name "*.js" -type f -exec sed -i 's|locally hosted|private|g' {} + \
 
 COPY static/favicon.png /app/backend/static/favicon.png
 COPY static/favicon.png /app/build/favicon.png
+COPY backend/main.py /app/backend/main.py
+#COPY static/index.html  /app/backend/static/index.html
+COPY static/index.html  /app/build/index.html
 
 ENV HOME /root
 
 EXPOSE 8080
-
 
 CMD [ "bash", "start.sh"]
