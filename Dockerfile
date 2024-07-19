@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM --platform=$BUILDPLATFORM  ghcr.io/open-webui/open-webui:main as build
+FROM ghcr.io/open-webui/open-webui:main as build
 
 # Use args
 ARG USE_CUDA
