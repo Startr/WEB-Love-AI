@@ -148,7 +148,22 @@ class SPAStaticFiles(StaticFiles):
                 return await super().get_response("index.html", scope)
             else:
                 raise ex
+def copy_from_to(source_path, target_paths):
+    if not os.path.isfile(source_path):
+        raise FileNotFoundError(f"{source_path} does not exist.")
+    for target_path in target_paths:
+        os.makedirs(os.path.dirname(target_path), exist_ok=True)
+        shutil.copy2(source_path, target_path)
 
+# Define the source and target paths
+source_favicon = '/app/favicon.png'
+target_favicons = [
+    '/app/backend/static/favicon.png',
+    '/app/backend/static/splash.png',
+    '/app/build/favicon.png'
+]
+
+copy_from_to(source_favicon, target_favicons)
 
 print(
     rf"""
