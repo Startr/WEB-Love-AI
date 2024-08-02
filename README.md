@@ -28,7 +28,7 @@ Get started with our project by following these steps from your terminal:
 `cd WEB-Love-AI`
 
 **Build and run the Docker container**
-`./BuildnRun.sh`
+`bash <(curl -sL startr.sh) run`
 
 
 ### 3. Usage

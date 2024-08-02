@@ -24,11 +24,11 @@ ENV OLLAMA_BASE_URL="/ollama" \
     OPENAI_API_BASE_URL=""
 
 ## API Key and Security Config ##
-ENV OPENAI_API_KEY="" \
-    WEBUI_SECRET_KEY="" \
-    SCARF_NO_ANALYTICS=true \
-    DO_NOT_TRACK=true \
-    ANONYMIZED_TELEMETRY=false
+#ENV OPENAI_API_KEY="" \
+#    WEBUI_SECRET_KEY="" \
+#    SCARF_NO_ANALYTICS=true \
+#    DO_NOT_TRACK=true \
+#    ANONYMIZED_TELEMETRY=false
 
 # Use locally bundled version of the LiteLLM cost map json
 # to avoid repetitive startup connections
@@ -75,8 +75,15 @@ COPY backend/main.py /app/backend/main.py
 #COPY static/index.html  /app/backend/static/index.html
 #COPY static/index.html  /app/build/index.html
 
-ENV HOME /root
+ENV HOME=/root
 
 EXPOSE 8080
+
+HEALTHCHECK CMD curl --silent --fail http://localhost:8080/health | jq -e '.status == true' || exit 1
+
+USER $UID:$GID
+
+ARG BUILD_HASH
+ENV WEBUI_BUILD_VERSION=${BUILD_HASH}
 
 CMD [ "bash", "start.sh"]
