@@ -31,7 +31,7 @@ Get started with our project by following these steps from your terminal:
 
 Just run the following line in your terminal to get startred ;)
 
-`bash <(curl -sL startr.sh)`
+`bash <(curl -sL startr.sh) run`
 
 
 ### 3. Usage
