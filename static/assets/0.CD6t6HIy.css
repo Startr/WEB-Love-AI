@@ -2480,7 +2480,7 @@ pre{
     border-color:var(--color-gray-800, #333)
 }
 :is(.dark .dark\:border-gray-850){
-    border-color:var(--color-gray-850, teal)
+    border-color: teal;
 }
 :is(.dark .dark\:border-gray-900){
     border-color:var(--color-gray-900, #171717)
