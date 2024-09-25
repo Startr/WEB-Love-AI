@@ -71,9 +71,10 @@ COPY static/favicon.png /app/backend/static/favicon.png
 COPY static/favicon.png /app/build/favicon.png
 COPY static/favicon.png /app/favicon.png
 
+COPY static/assets/ /app/build/_app/immutable/assets/
+
 COPY backend/main.py /app/backend/open_webui/main.py
-#COPY static/index.html  /app/backend/static/index.html
-#COPY static/index.html  /app/build/index.html
+
 
 ENV HOME=/root
 
