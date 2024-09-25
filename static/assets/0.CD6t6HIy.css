@@ -1,3 +1,83 @@
+/* changed the sizing of the logo on the main interaction screen */
+#messages-container > div > div > div > div.flex.justify-start > div > button > div > img{
+    width: 8rem !important;
+    height: 8rem !important;
+}
+
+/* changes the button 1 color for suggested text*/
+#suggestions-container > div:nth-child(1) > button{
+    background-color: teal !important;
+}
+
+#suggestions-container > div:nth-child(2) > button{
+    background-color: teal !important;
+}
+
+#suggestions-container > div:nth-child(3) > button{
+    background-color: teal !important;
+}
+
+#suggestions-container > div:nth-child(4) > button{
+    background-color: teal !important;
+}
+
+#suggestions-container > div:nth-child(5) > button{
+    background-color: teal !important;
+}
+
+#suggestions-container > div:nth-child(6) > button{
+    background-color: teal !important;
+}
+
+#suggestions-container > div:nth-child(7) > button{
+    background-color: teal !important;
+}
+
+/* Text color change in the suggestion prompt box */
+#suggestions-container > div:nth-child(1) > button > div.flex.flex-col.text-left > div.font-medium.dark\:text-gray-300.dark\:group-hover\:text-gray-200.transition{
+    color: black !important;
+}
+
+#suggestions-container > div:nth-child(2) > button > div.flex.flex-col.text-left > div.font-medium.dark\:text-gray-300.dark\:group-hover\:text-gray-200.transition{
+    color: black !important;
+}
+
+#suggestions-container > div:nth-child(3) > button > div.flex.flex-col.text-left > div.font-medium.dark\:text-gray-300.dark\:group-hover\:text-gray-200.transition{
+    color: black !important;
+}
+
+#suggestions-container > div:nth-child(4) > button > div.flex.flex-col.text-left > div.font-medium.dark\:text-gray-300.dark\:group-hover\:text-gray-200.transition{
+    color: black !important;
+}
+
+#suggestions-container > div:nth-child(5) > button > div.flex.flex-col.text-left > div.font-medium.dark\:text-gray-300.dark\:group-hover\:text-gray-200.transition{
+    color: black !important;
+}
+
+#suggestions-container > div:nth-child(6) > button > div.flex.flex-col.text-left > div.font-medium.dark\:text-gray-300.dark\:group-hover\:text-gray-200.transition{
+    color: black !important;
+}
+
+#suggestions-container > div:nth-child(7) > button > div.flex.flex-col.text-left > div.font-medium.dark\:text-gray-300.dark\:group-hover\:text-gray-200.transition{
+    color: black !important;
+}
+
+/* changes search box color */
+#chat-textarea{
+    background-color: #013757 !important;
+    height: 48px !important;
+    color: white !important;
+}
+
+body > div > div.app.relative > div > div.h-screen.max-h-\[100dvh\].md\:max-w-\[calc\(100\%-260px\)\].w-full.max-w-full.flex.flex-col > div > div:nth-child(2) > div > div.bg-white.dark\:bg-gray-900 > div > div > form > div.flex-1.flex.flex-col.relative.w-full.rounded-3xl.px-1\.5.bg-gray-50.dark\:bg-gray-850.dark\:text-gray-100{
+    background-color: #013757 !important;
+}
+
+/* Chage color of side panel*/
+#sidebar > div{
+    background-color: #013757 !important;
+    
+}
 
 
 *,:before,:after{
@@ -2480,7 +2560,7 @@ pre{
     border-color:var(--color-gray-800, #333)
 }
 :is(.dark .dark\:border-gray-850){
-    border-color: teal;
+    border-color:var(--color-gray-850, #262626)
 }
 :is(.dark .dark\:border-gray-900){
     border-color:var(--color-gray-900, #171717)
@@ -3565,86 +3645,4 @@ input[type=number]{
     position:relative;
     padding:5px 9px;
     z-index:1
-}
-
-
-/* changed the sizing of the logo on the main interaction screen */
-#messages-container > div > div > div > div.flex.justify-start > div > button > div > img{
-    width: 8rem !important;
-    height: 8rem !important;
-}
-
-/* changes the button 1 color for suggested text*/
-#suggestions-container > div:nth-child(1) > button{
-    background-color: teal !important;
-}
-
-#suggestions-container > div:nth-child(2) > button{
-    background-color: teal !important;
-}
-
-#suggestions-container > div:nth-child(3) > button{
-    background-color: teal !important;
-}
-
-#suggestions-container > div:nth-child(4) > button{
-    background-color: teal !important;
-}
-
-#suggestions-container > div:nth-child(5) > button{
-    background-color: teal !important;
-}
-
-#suggestions-container > div:nth-child(6) > button{
-    background-color: teal !important;
-}
-
-#suggestions-container > div:nth-child(7) > button{
-    background-color: teal !important;
-}
-
-/* Text color change in the suggestion prompt box */
-#suggestions-container > div:nth-child(1) > button > div.flex.flex-col.text-left > div.font-medium.dark\:text-gray-300.dark\:group-hover\:text-gray-200.transition{
-    color: black !important;
-}
-
-#suggestions-container > div:nth-child(2) > button > div.flex.flex-col.text-left > div.font-medium.dark\:text-gray-300.dark\:group-hover\:text-gray-200.transition{
-    color: black !important;
-}
-
-#suggestions-container > div:nth-child(3) > button > div.flex.flex-col.text-left > div.font-medium.dark\:text-gray-300.dark\:group-hover\:text-gray-200.transition{
-    color: black !important;
-}
-
-#suggestions-container > div:nth-child(4) > button > div.flex.flex-col.text-left > div.font-medium.dark\:text-gray-300.dark\:group-hover\:text-gray-200.transition{
-    color: black !important;
-}
-
-#suggestions-container > div:nth-child(5) > button > div.flex.flex-col.text-left > div.font-medium.dark\:text-gray-300.dark\:group-hover\:text-gray-200.transition{
-    color: black !important;
-}
-
-#suggestions-container > div:nth-child(6) > button > div.flex.flex-col.text-left > div.font-medium.dark\:text-gray-300.dark\:group-hover\:text-gray-200.transition{
-    color: black !important;
-}
-
-#suggestions-container > div:nth-child(7) > button > div.flex.flex-col.text-left > div.font-medium.dark\:text-gray-300.dark\:group-hover\:text-gray-200.transition{
-    color: black !important;
-}
-
-/* changes search box color */
-#chat-textarea{
-    background-color: #013757 !important;
-    height: 48px !important;
-    color: white !important;
-}
-
-body > div > div.app.relative > div > div.h-screen.max-h-\[100dvh\].md\:max-w-\[calc\(100\%-260px\)\].w-full.max-w-full.flex.flex-col > div > div:nth-child(2) > div > div.bg-white.dark\:bg-gray-900 > div > div > form > div.flex-1.flex.flex-col.relative.w-full.rounded-3xl.px-1\.5.bg-gray-50.dark\:bg-gray-850.dark\:text-gray-100{
-    background-color: #013757 !important;
-}
-
-/* Chage color of side panel*/
-#sidebar > div{
-    background-color: #013757 !important;
-    
 }
