@@ -87,4 +87,13 @@ USER $UID:$GID
 ARG BUILD_HASH
 ENV WEBUI_BUILD_VERSION=${BUILD_HASH}
 
+
+# TODO Add Auto backup restore for Docker 
+#
+# backup /app/backend/data 
+#
+# Use style as https://snap.startr.cloud 
+# https://github.com/opencoca/WEB-SnapCloud
+
+
 CMD [ "bash", "start.sh"]
