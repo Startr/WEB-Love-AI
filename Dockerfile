@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM startr/ai-web-openwebui:manifest-amd64 as build
+FROM startr/ai-web-openwebui:latest as build
 
 # Use args
 ARG USE_CUDA
@@ -22,13 +22,6 @@ ENV ENV=prod \
 ## Basis URL Config ##
 ENV OLLAMA_BASE_URL="/ollama" \
     OPENAI_API_BASE_URL=""
-
-## API Key and Security Config ##
-#ENV OPENAI_API_KEY="" \
-#    WEBUI_SECRET_KEY="" \
-#    SCARF_NO_ANALYTICS=true \
-#    DO_NOT_TRACK=true \
-#    ANONYMIZED_TELEMETRY=false
 
 # Use locally bundled version of the LiteLLM cost map json
 # to avoid repetitive startup connections
