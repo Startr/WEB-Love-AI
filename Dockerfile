@@ -67,14 +67,12 @@ RUN find . -name "*.js" -type f -exec sed -i 's|locally hosted|private|g' {} + \
   -exec sed -i 's|的本地服|私人的|g' {} + \
   -exec sed -i 's|локално назначен|частный|g' {} +
 
-COPY static/favicon.png /app/backend/static/favicon.png
-COPY static/favicon.png /app/build/favicon.png
-COPY static/favicon.png /app/favicon.png
-
-COPY static/assets/ /app/build/_app/immutable/assets/
+#COPY static/favicon.png /app/backend/static/favicon.png
+#COPY static/favicon.png /app/build/favicon.png
+#COPY static/favicon.png /app/favicon.png
+# COPY static/assets/ /app/build/_app/immutable/assets/
 
 #COPY backend/main.py /app/backend/open_webui/main.py
-
 
 ENV HOME=/root
 
@@ -96,4 +94,4 @@ ENV WEBUI_BUILD_VERSION=${BUILD_HASH}
 # https://github.com/opencoca/WEB-SnapCloud
 
 
-CMD [ "bash", "start.sh"]
+CMD [ "bash", "restore_backup_start.sh", "server" ]
