@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM startr/ai-web-openwebui:latest as build
+FROM startr/ai-web-openwebui:manifest-amd64 as build
 
 # Use args
 ARG USE_CUDA
