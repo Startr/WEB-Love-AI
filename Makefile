@@ -9,6 +9,8 @@ help:
 it_run:
 	@bash -c 'bash <(curl -sL startr.sh) run'
 	
+it_deploy:
+	@bash -c 'caprover deploy --default'
 
 this_dev_env:
 	#make sure we have brew and docker installed
