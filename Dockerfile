@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM startr/ai-web-openwebui:latest as build
+FROM startr/ai-web-openwebui:amd64-0.3.35 as build
 
 # Use args
 ARG USE_CUDA
@@ -40,6 +40,7 @@ ENV RAG_EMBEDDING_MODEL="$USE_EMBEDDING_MODEL_DOCKER" \
 
 ## Hugging Face download cache ##
 ENV HF_HOME="/app/backend/data/cache/embedding/models"
+
 #### Other models ##########################################################
 
 WORKDIR /app/backend
