@@ -45,7 +45,6 @@ ENV HF_HOME="/app/backend/data/cache/embedding/models"
 
 WORKDIR /app/backend
 
-RUN find . -type f -exec sed -i 's|Open WebUI|Canadians.Love/AI|g' {} +
 RUN find . -name "*.js" -type f -exec sed -i 's|locally hosted|private|g' {} + \
   -exec sed -i 's|lokal gehosteten|privat|g' {} + \
   -exec sed -i 's|lokaal gehoste|privé|g' {} + \
