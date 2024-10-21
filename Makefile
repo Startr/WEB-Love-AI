@@ -34,8 +34,9 @@ pi:
 	./Build.sh linux/arm/v7
 
 it_publish:
-	# Publish all our images to docker hub
-	./Publish.sh
+	# Publish the repo to our private registry
+	# and push to production
+	caprover deploy --default 
 
 it_flow:
 	git branch master || \
