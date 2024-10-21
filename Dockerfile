@@ -45,20 +45,21 @@ ENV HF_HOME="/app/backend/data/cache/embedding/models"
 
 WORKDIR /app/backend
 
-RUN find . -name "*.js" -type f -exec sed -i 's|locally hosted|private|g' {} + \
-  -exec sed -i 's|lokal gehosteten|privat|g' {} + \
-  -exec sed -i 's|lokaal gehoste|privé|g' {} + \
-  -exec sed -i 's|hébergé localement|privé|g' {} + \
-  -exec sed -i 's|로컬에서 호스팅되는 서버에|개인 서버에|g' {} + \
-  -exec sed -i 's|データはローカルでホストされているサーバー|プライベートサーバー|g' {} + \
-  -exec sed -i 's|هیچ اتصال خارجی ایجاد نمی کند و داده های شما به طور ایمن در سرور میزبان محلی شما باقی می ماند.|خصوصی|g' {} + \
-  -exec sed -i 's|ადგილობრივ სერვერზე|პრივატული|g' {} + \
-  -exec sed -i 's|lưu trữ cục bộ|riêng tư|g' {} + \
-  -exec sed -i 's|lokalnie hostowanym|prywatnie|g' {} + \
-  -exec sed -i 's|alojado localmente|privado|g' {} + \
-  -exec sed -i 's|hospedado localmente|privado|g' {} + \
-  -exec sed -i 's|的本地服|私人的|g' {} + \
-  -exec sed -i 's|локално назначен|частный|g' {} +
+#RUN find . -type f -exec sed -i 's|Open WebUI|Canadians.Love/AI|g' {} +
+#RUN find . -name "*.js" -type f -exec sed -i 's|locally hosted|private|g' {} + \
+#   -exec sed -i 's|lokal gehosteten|privat|g' {} + \
+#   -exec sed -i 's|lokaal gehoste|privé|g' {} + \
+#   -exec sed -i 's|hébergé localement|privé|g' {} + \
+#   -exec sed -i 's|로컬에서 호스팅되는 서버에|개인 서버에|g' {} + \
+#   -exec sed -i 's|データはローカルでホストされているサーバー|プライベートサーバー|g' {} + \
+#   -exec sed -i 's|هیچ اتصال خارجی ایجاد نمی کند و داده های شما به طور ایمن در سرور میزبان محلی شما باقی می ماند.|خصوصی|g' {} + \
+#   -exec sed -i 's|ადგილობრივ სერვერზე|პრივატული|g' {} + \
+#   -exec sed -i 's|lưu trữ cục bộ|riêng tư|g' {} + \
+#   -exec sed -i 's|lokalnie hostowanym|prywatnie|g' {} + \
+#   -exec sed -i 's|alojado localmente|privado|g' {} + \
+#   -exec sed -i 's|hospedado localmente|privado|g' {} + \
+#   -exec sed -i 's|的本地服|私人的|g' {} + \
+#   -exec sed -i 's|локално назначен|частный|g' {} +
 
 #COPY static/favicon.png /app/backend/static/favicon.png
 #COPY static/favicon.png /app/build/favicon.png
